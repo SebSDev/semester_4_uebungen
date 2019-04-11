@@ -1,0 +1,15 @@
+Was ist der Unterschied zwischen einem Histogramm und einem Stab-/Balkendiagramm?
+	- Beim Histogramm gibt uns die Fläche der einzelnen Balken eine Auskunft über die absolute/relative Häufigkeit und auf der "y-Achse" befindet sich die Häufigkeitsdichte. 
+	  Beim Stab-/Balkendiagramm haben wir lediglich bestimmte Werte mit ihren absoluten oder relativen Häufigkeiten als Höhe.
+
+Gegeben ist die empirische Verteilungsfunktion F(x). Es gilt: F(5) = 0,43. Welche Aussage kannst du aufgrund dieser Angabe treffen?
+	- 43% der Stichprobenwerte sind <= 5.
+
+Wir berechnen das 0,38-Quantil einer sortierten Datenmenge. Welche Aussage können wir über die relative Menge der Daten, die kleiner oder größer als das 0,38-Quantil sind treffen?
+	- 38% der Daten sind <= des 0,38-Quantils und 63% der Daten sind >= des 0,38-Quantils.
+
+Stichprobenvarianz s2 und Stichprobenstandardabweichung s.
+    a. Aus welchem Grund wird bei s2 quadriert?
+    b. Aus welchem Grund zieht man bei s die Wurzel?
+	a: Sehr große Abweichungen werden so "bestraft"
+	b: Damit man wieder die Selbe Einheit wie am Anfang hat. (z.B. Liter und nicht Liter^2)

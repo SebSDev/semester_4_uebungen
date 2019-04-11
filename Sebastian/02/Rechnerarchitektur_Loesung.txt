@@ -1,0 +1,11 @@
+Haben wir uns in der Vorlesung "maschinennahe Programmierung" hauptsächlich mit Computerarchitektur, oder mit Computerorganisation beschäftigt?
+	- Computerarchitektur. 
+Welchen Vorteil und welchen Nachteil hat UTF-32 im Vergleich zu UTF-8?
+	- Vorteil: Es wird Rechenaufwand beim dekodieren gespart, da der Unicode code direkt ohne Berechnung gespeichert werden kann
+	- Nachteil: UTF32 verbraucht für jeden Character immer 4 Byte. Bei UTF-8 sind es oft weniger (oft nur 1 Byte)
+Warum subtrahiert man bei UTF-16 in der 4 Byte Variante 0x10000 vom Unicode Wert?
+	- Weil man so nur höchstens 20 Bit benötigt und da man die 4 Byte Variante verwendet, weiß man sowieso, dass an 6. Stelle eine 1 stehen muss.
+Warum sollte man, wenn man sehr sauber arbeiten will, in C/C++ nicht z.B. den Datentypen "short int", sondern int16_t benutzen?
+	- Weil die Größe von short int von Compilereinstellungen abhängt. int16_t ist immer gleich groß
+Warum sollte man floating point Werte niemals auf Gleichheit überprüfen? Also z.B. if(a == 0.784)
+	- Floating point Werte können nicht immer exakt dargestellt werden. Daher ist das Verhalten undefiniert.

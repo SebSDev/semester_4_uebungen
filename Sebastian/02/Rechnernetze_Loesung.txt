@@ -1,0 +1,10 @@
+Warum verbindet man im Internet nicht einfach jeden Endpunkt mit jedem anderen Endpunkt?
+	- Die Anzahl der benötigten Verbindungen wäre viel zu hoch.
+Mit welchem Algorithmus, den wir bereits gelernt haben, ist die Funktionsweise von Traceroute vergleichbar?
+	- Breitensuche
+Warum werden Pakete im Router im Puffer zwischengespeichert und nicht sofort weitergeleitet?
+	- Der Router muss verschiedene Berechnungen mit den Paketen anstellen, bevor er sie weiterleiten kann.
+	  Zum Beispiel rausfinden, an welche IP-Adresse das Paket gehen soll. 
+	  Wenn kurzzeitig Pakete schneller zum Router kommen, als er sie bearbeiten kann, speichert der Puffer diese Pakete solange bis der Router "für sie Zeit hat".
+Warum schreibt die ISO vor, wie das OSI Schichtenmodell aufgebaut werden muss?
+	- Damit man einen Standard für die Kommunikation zwischen den verschiedenen Schichten hat.

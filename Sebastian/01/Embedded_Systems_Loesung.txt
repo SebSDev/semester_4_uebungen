@@ -1,0 +1,21 @@
+1.	Was ist ein Watchdog?
+	- Teil eines Systems um andere Teile des Systems zu beobachten um evtl. Fehler zu erkennen.
+
+
+2.	Was bedeutet „Flashen“?
+	- Hochladen des Programmcodes auf den Mikrocontroller. 
+	Übersetztes Programm wird vom PC an den Mikrocontroller gesendet.
+
+
+3.	Was bedeutet „Cross-Compilation“?
+	- Ein Programm wird nicht auf der Plattform übersetzt auf der es später ausgeführt werden soll.
+	  In unserem Fall: Programm wird auf PC übersetzt, Zielplattform ist aber der Mikrocontroller
+
+
+4.	Welches Bauteil fehlt, damit eine Kommunikation zwischen PC und Mikrocontroller stattfinden kann?
+	- USB-Serial Adapter.
+
+
+
+5.	Gegeben ist der Befehl „Serial.begin(9600);“. Was bedeutet der Parameter 9600?
+	- Baudrate: Die Datenrate in Bits pro Sekunde, in der die Daten über die serielle Schnittstelle übertragen werden.
