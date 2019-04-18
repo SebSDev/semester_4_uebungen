@@ -1,0 +1,17 @@
+Wie lange ist ein Takt? (Bild)
+	- 6ms
+
+Warum verwendet man Prescaler?
+	- Damit bestimmte Zähler langsamer hochzählen. So können auch längere Zeitspannen gemessen werden.
+
+Um welchen Faktor wird die Frequenz mit einem 4-Bit Prescaler, bei dem auf die fallende Flanke des linken Bits reagiert wird, verringert?
+	- 2^4 also 16
+
+ISR(TIMER4_COMPA_vect) { ... } Bei welchem Ereignis wird diese ISR aufgerufen?
+	- Wenn der Wert, der im Register OCR4A steht, vom Timer erreicht wurde
+
+Man will, dass alle drei Sekunden eine LED kurz leuchtet. Benutzt man dafür Output Compare, oder Input Capture?
+	- Output Compare
+
+Man will, dass der aktuelle Zeitstempel beim Drücken eines Tasters gespeichert wird. Output Comapre, oder Input Capture?
+	- Input Capture

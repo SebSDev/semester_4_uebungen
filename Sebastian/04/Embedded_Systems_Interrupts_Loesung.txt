@@ -1,0 +1,23 @@
+Welcher Befehl macht was?
+a) Interrupts Global aktivieren
+b) spezielle Interrupts aktivieren
+c) Interrupt getriggert durch fallende Flanke
+1) EICRA |= (1 << ISC51);
+2) SREG |= (1 << 7);
+3) EIMSK |= (1 << ISC 51);
+	- Lösung: a)2), b)3), c)1)
+
+INT1 ist als Interrupt registriert. Welcher Befehl ist nötig, dass der Interrupt auf eine steigende Flanke reagiert?
+	- EICRA |= (1 << ISC10) | (1 << ISC11);
+
+Was ist der Unterschied zwischen EICRA und EICRB?
+	- EICRA ist für die Interrupts 0-3 und EICRB für die Interrupts 4-7
+
+Warum sollten globale Variablen, die in einer ISR vorkommen immer volatile sein?
+	- Der Compiler denkt, dass die ISR nie aufgerufen wird (weil sie ja nirgens explizit im Code aufgerufen wird),
+	  deswegen kann es sein, dass der Compiler die Variable einfach in einem Register speichert und sie immer von Dort liest.
+	  In diesem Register bleibt der Wert der Variable aber immer gleich, wodurch die Variable auch durch die ISR effektiv nicht geändert wird.
+	  Mit volatile kann man aber sagen, dass die Variable immer wieder neu aus dem Speicher geladen werden soll und nicht aus einem Register geholt werden soll.
+
+Warum sollte das abarbeiten einer ISR nicht zu lange dauern?
+	- Man könnte andere wichtige Interrupts in der Zeit verpassen, in der die ISR läuft.
