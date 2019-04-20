@@ -1,0 +1,33 @@
+Warum gibt es bei der Von Neumann Architektur ein Bottleneck zwischen Speicher und ALU?
+	- Weil Befehle schneller ausgeführt werden, als sie vom Speicher geholt werden können
+
+Welche Prozessor-Architektur wird heutzutage verwendet?
+	- Harvard und Von Neumann werden beide genutzt. Intel benutzt z.B. meistens Von Neumann und Arduino meistens Harvard
+
+Mache die richtige Verbindung:
+	Externer Interrupt		Asynchron
+	Interner Interrupt		Synchron
+	- Extern: Asynchron, Intern: Synchron
+
+Bringe den Ablauf eines Interrupts in die richtige Reihenfolge. (Der erste und der letzte Befehl sind bereits richtig)
+- Interrupt wird ausgelöst
+- CPU holt sich die Werte von PC und SR wieder vom Stack und schreibt diese in die Register
+- ISR läuft
+- PC und SR Werte der Interrupt Routine werden in PC und SR Register gesetzt
+- ISR holt sich die Werte der verwendeten Register vom Stack und restauriert diese
+- PC und SR werden von der CPU auf dem Stack gespeichert
+- ISR speichert die Werte aller benötigten Register auf dem Stack
+- Das Hauptprogramm läuft weiter
+
+Lösung:
+- Interrupt wird ausgelöst
+- PC und SR werden von der CPU auf dem Stack gespeichert
+- PC und SR Werte der Interrupt Routine werden in PC und SR Register gesetzt
+- ISR speichert die Werte aller benötigten Register auf dem Stack
+- ISR läuft
+- ISR holt sich die Werte der verwendeten Register vom Stack und restauriert diese
+- CPU holt sich die Werte von PC und SR wieder vom Stack und schreibt diese in die Register
+- Das Hauptprogramm läuft weiter
+
+
+Weiter bei ISA
