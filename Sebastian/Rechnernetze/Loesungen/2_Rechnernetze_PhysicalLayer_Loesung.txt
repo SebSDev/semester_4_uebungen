@@ -1,0 +1,16 @@
+Was ist die Bitrate und was die Baudrate, wenn man die minimal mögliche Codierung verwendet? (Bild)
+	- Bitrate: 10*3bit=30b/s, Baudrate: 10
+
+Ordne die drei Kabelarten nach der maximal möglichen Bandbreite (klein nach groß).
+Koaxialkabel, Twisted Pair, Glasfaser
+	- Twisted Pair, Koaxialkabel, Glasfaser
+
+Warum will man bei einem Signal, das übertragen werden soll, nicht, dass es für lange Zeit auf 0 oder 1 bleibt?
+	- So ist es für den Empfänger einfacher, das Signal zu demodulieren, also aus dem übertragenem Signal die Daten herauszubekommen.
+	  Wenn das Signal lange auf 0 bleiben würde, dann könnte der Empfänger daraus keinen "Takt" erkennen und wüsste nicht, ob es z.B. 4 0en, oder 5 0en sind.
+
+Was ist ein Nachteil der Manchester Codierung, bezogen auf die benötigte Bandbreite?
+	- Die Bandbreite muss doppelt so groß, wie bei einer einfachen Binärcodierung sein, weil ein Takt pro Zyklus ja immer 1x low und 1x high ist.
+
+Was ist die Besonderheit am Gray-Code?
+	- Benachbarte Werte unterscheiden sich in der Codierung immer nur um 1 Bit
