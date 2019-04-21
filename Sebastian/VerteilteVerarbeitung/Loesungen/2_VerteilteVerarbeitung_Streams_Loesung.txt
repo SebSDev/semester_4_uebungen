@@ -1,0 +1,20 @@
+Warum ist es bei einem reaktiven Systen so wichtig, dass man nicht mehr benötigte Ressourcen explizit wieder freigibt?
+	- Ein reaktives System terminiert nie. Deshlab würden Ressourcen für immer Speicher/Performance verschwenden, wenn sie nicht explizit freigegeben werden würden.
+
+Was macht ein "finally"-Block?
+	- Das was darin steht, wird IMMER ausgeführt, wenn der "try"-Block fertig ist.
+
+Mit welcher Methode gibt man die Ressourcen, die ein Stream verbraucht wieder frei?
+	- close()
+
+Was ist Dependency Injection?
+	- Man initialisiert bestimmte Objekte nicht in der Klasse, oder Methode in der sie benötigt werden, sondern übergibt die Objekte als Parameter.
+	  So ist man flexibler. Man kann z.B. eine Methode "tuWas(InputStream is)" haben und der kann man dann einen BufferedInputStream, oder einen FileInputStream übergeben, 
+  	  oder irgendeinen anderen InputStream. 
+
+Welches Design Pattern spielt eine große Rolle bei Dependency Injection?
+	- Das Decorator Pattern
+
+java.util.Scanner zerlegt Datenströme in Tokens. Nenne Beispiele für Tokens in diesem Kontext.
+	- Eine Zeile, ein kompletter String, eine Ziffer usw. können Tokens sein.
+
