@@ -1,0 +1,4 @@
+Was ist ein Port? (im Kontext von Sockets)
+	- Bei der Kommunikation über ein Netzwerk gibt es die IP-Adressen, die uns sagen, mit welcher Maschine wir kommunizieren. 
+	  Bei jeder Maschine gibt es dann aber auch noch innerhalb der Maschine Adressen, an die wir Daten senden können, oder empfangen können.
+	  Diese Adressen innerhalb der Maschine sind die Ports. Wir binden einen Socket immer an einen Port, damit der Socket weiß, bei welchem Eingang er "zuhören" muss.
