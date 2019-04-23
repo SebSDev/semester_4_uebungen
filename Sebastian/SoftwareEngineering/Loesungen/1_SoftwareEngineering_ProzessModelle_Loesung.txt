@@ -1,0 +1,27 @@
+Bringe diese Schritte des Softwarelebenszyklus in die richtige Reihenfolge...
+	- Problemformulierung
+	  Konzeption, Machbarkeitsstudie
+	  Geschäfts(prozess)modellierung
+	  Analyse
+	  Entwurf
+	  Implementierung
+	  Test
+	  Integration, Integrationstest
+	  Installation, Abnahme, Einführung
+	  Betrieb, Evolution
+	  
+Was ist der Unterschied zwischen Validierung und Verifikation?
+	- Validierung: Hat man das richtige Produkt entwickelt?
+	  Verifikation: Hat man das Produkt richtig entwickelt?
+
+In welchem Schritt des Softwarelebenszyklus finden Validierung und Verifikation statt?
+	- Test und Integrationstest
+
+Du erstellst ein UML-Klassendiagramm für ein Kundenprojekt. In welcher Phase des Softwarelebenszyklus sollte das passieren?
+	- Entwurf
+
+Du arbeitest an einem neuen Kundenprojekt und überlegst, wie viel dieses Projekt kosten wird. In welcher Phase des Softwarelebenszyklus sollte das geschehen?
+	- Konzeption, Machbarkeitsstudie
+
+Nenne vier verschiedene Arten von Test, die es beim Softwarelebenszyklus gibt.
+	- Modultests, Integrationstests, Systemtests, Akzeptanztests
