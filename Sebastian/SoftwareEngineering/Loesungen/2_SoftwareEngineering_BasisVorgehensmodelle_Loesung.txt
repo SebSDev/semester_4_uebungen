@@ -1,0 +1,15 @@
+Warum ist es so wichtig, dass man genau eine verantwortliche Person für ein Projekt hat?
+	- Wenn es mehrere gibt, schieben sie die Schuld immer auf andere.
+
+Was ist der Unterschied zwischen dem inkrementellen und dem evolutionären Vorgehensmodell?
+	- Beim inkrementellen weiß der Kunde vorher schon ganz genau, wie sein komplettes Produkt sein soll, aber es wird erst das Wichtigste entwickelt und ausgeliefert und
+	  dann nach und nach immer unwichtigere Dinge. Beim Evolutionären Modell weiß der Kunde noch nicht genau was er will. Es wird eine Grundfunktionalität entwickelt und ausgeliefert.
+	  Beim Arbeiten mit dieser ersten Version merkt der Kunde dann erst, was er noch alles haben will. 
+	  => Inkrementell: Kunde muss vorher schon ganz genau wissen, was er haben will
+	     Evolutionär: Kunde hat nur eine ungefähre Vorstellung, was er will
+
+Aus welchem Grund wurde das V-Modell eingeführt/erfunden?
+	- Alle vorhergehenden Modelle hatten keine richtige Qualitätssicherung.
+
+Warum ist das Spiralmodell für kleine und mittelgroße Projekte nicht geeignet?
+	- Der Planungsaufwand ist zu groß.
