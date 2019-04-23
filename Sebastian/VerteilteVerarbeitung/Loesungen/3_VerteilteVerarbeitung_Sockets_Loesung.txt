@@ -2,3 +2,26 @@ Was ist ein Port? (im Kontext von Sockets)
 	- Bei der Kommunikation über ein Netzwerk gibt es die IP-Adressen, die uns sagen, mit welcher Maschine wir kommunizieren. 
 	  Bei jeder Maschine gibt es dann aber auch noch innerhalb der Maschine Adressen, an die wir Daten senden können, oder empfangen können.
 	  Diese Adressen innerhalb der Maschine sind die Ports. Wir binden einen Socket immer an einen Port, damit der Socket weiß, bei welchem Eingang er "zuhören" muss.
+
+Bei IP-V4 sind 2^32 Adressen möglich. Wie sieht die Adresse mit dem größten Wert aus?
+	- 255.255.255.255  => 255*255*255*255 = 2^32 (ca.)
+
+Was ist die Ausgabe von folgender Methode?
+public static void main(String[] args) throws UnknownHostException {
+        InetAddress inet = InetAddress.getByName("localhost");
+        System.out.println(inet.getHostAddress());
+    }
+	- Ausgabe: 127.0.0.1
+
+Welche Art der Kommunikation zwischen mehreren Sockets haben wir kennengelernt?
+	- Streams
+
+In welchem Zahlenbereich kann die Ausgabe des folgenden Programms liegen?
+	//...
+        Socket s = new Socket("localhost", 12345);
+        System.out.println(s.getLocalPort()); //getLocalPort returned int-Wert
+
+	- Ausgabe zwischen 1024 und 65535. Die Ports von 0 bis 1023 sind immer bereits reserviert.
+	  Es gibt auch noch eine feinere aufteilung der Ports zwischen 1024 und 65535, die man unter 
+	  https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+    	  sehen kann.
