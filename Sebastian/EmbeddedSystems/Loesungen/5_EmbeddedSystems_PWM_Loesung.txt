@@ -1,0 +1,20 @@
+Fülle die richtigen Wörter ein!
+	konstanter	variabler
+Die Pulsweitenmodulation ist eine Modulationsart, bei der ein Signal mit ______ Periode, aber _____ Pulsdauer, erzeugt wird.
+	- Die Pulsweitenmodulation ist eine Modulationsart, bei der ein Signal mit konstanter Periode, aber variabler Pulsdauer, erzeugt wird.
+
+Welche Aussage ist wahr?
+	a) Als TOP-Register wird immer ICRn verwendet.
+	b) Als TOP-Register wird immer OCRnA verwendet.
+	c) ICRn, oder OCRnA können beide als TOP-Register verwendet werden.
+	- c) ist richtig. Siehe Skript Seite 11.
+
+Warum verwendet man anstatt der PWM mittels Hardwarekonfiguration nicht einfach delay() und schaltet im loop immer zwischen HIGH und LOW um?
+	- Weil delay() blockiert. Man kann also in der Zeit nichts anderes machen.
+
+Was sieht man im OCnX Register bei der Pulsweitenmodulation?
+	- im OCnX ist das tatsächliche PWM Signal, das immer zwischehn HIGH und LOW umschaltet.
+
+Wofür steht der Fast PWM Modus?
+	- Im fast PWM Modus wird immer bis zu einem bestimmten Wert hochgezählt und dann sofort wieder bei 0 gestartet.
+	  In anderen Modi wird immer langsam hochgezählt und dann wieder langsam runtergezählt.
