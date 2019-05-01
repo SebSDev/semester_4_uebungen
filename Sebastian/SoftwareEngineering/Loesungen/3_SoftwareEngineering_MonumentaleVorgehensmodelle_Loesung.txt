@@ -1,0 +1,30 @@
+Im V-Modell XT gibt es das sogenannte "Tailoring". Was wird beim Tailoring gemacht und welche Vorteile hat es?
+	- Tailoring ist der Vorgang, bei dem man auswählt, welche Module man in seinem Projekt haben will. Also z.B. welche Entscheidungspunkte es geben soll.
+	  Der Vorteil ist, dass man den Projektablauf auf seine eigenen Bedürfnisse anpassen kann und nur die Prozesse durchläuft, die wirklich nötig sind.
+	  XT steht für "Exteme Tailoring". Tailoring = Schneidern
+
+Welche Informationen enthält ein Vorgehensbaustein im V-Modell XT?
+	- Welche Produkte werden erarbeitet
+	  Die Aktivitäten, die nötig sind, um diese Produkte zu erstellen
+	  Die Rollen der Beteiligten
+	  (Siehe Skript S. 74)
+
+Wer entscheidet beim V-Modell XT, ob das Projektteam bei einem Entscheidungspunkt in den nächsten Projektabschnitt weitergehen darf?
+	- Das Management, das für das Projekt zuständig ist.
+
+Sollte man das V-Modell XT für kleine Entwicklungsprojekte verwenden?
+	- Nein. Der bürokratische Aufwand ist zu hoch im Verhältnis zur Projektgröße.
+
+Durch welche Modellierungssprache wird das RUP-Modell unterstützt?
+	- UML
+
+Welche Informationen beinhaltet ein Prozess im RUP-Modell?
+	- Die 4 W's:
+	  wer	(Rollen)
+	  was	(Arbeitsergebnis/Produkt)
+	  wie	(Aktivität)
+	  wann	(Arbeitsablauf)
+
+Aus welcher Sicht, wird das Vorgehen im RUP-Modell erstellt? (Arbeitnehmer, oder Arbeitgeber)
+	- Nur Arbeitnehmer. Das ist einer der Nachteile des RUP-Modells.
+
