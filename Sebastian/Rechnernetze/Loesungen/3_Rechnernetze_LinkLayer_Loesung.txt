@@ -1,0 +1,27 @@
+In welchem Bauteil werden große Teile des Link und Physical Layer implementiert?
+	- Netzwerkkarte
+
+Ein Frame sieht NACH Byte-Stuffing folgendermaßen aus:
+FLAG ESC ESC A A B C A FLAG FLAG
+Wo ist der Fehler und wie kann man ihn beheben? Nachdem du den Fehler behoben hast, kannst du auch sagen, wie die Nutzdaten aussehen.
+	- Richtig wäre: FLAG ESC ESC A A B C A ESC FLAG FLAG
+	  Das FLAG am Ende muss escaped werden, ansonsten wird das Ende zu früh erkannt.
+	  Die Nutzdaten sehen also so aus: ESC A A B C A FLAG
+
+Welches Problem bei der Rahmenbildung wird durch Byte Count, Byte Stuffing oder Bit Stuffing behoben?
+	- Das Erkennen, wann ein Rahmen beginnt und wann er zuende ist.
+
+Welche Verfahren gibt es, um Bitfehler in den Nutzdaten zu erkennen?
+	- (Paritätsbits)
+	  Checksumme
+	  Cyclic Redundancy Check (CRC)
+
+Muss eine MAC-Adresse weltweit einzigartig sein?
+	- Nein. Sie muss nur innerhalb ihres lokalen Netzes einzigartig sein.
+	  Also alle Geräte, die direkt miteinander verbunden sind, dürfen keine gleiche MAC-Adresse haben.
+
+Warum ist es nicht möglich in Wireshark die CRC Prüfsumme eines Pakets zu sehen?
+	- Die Netzwerkkarte entfernt die Prüfsumme bereits bevor das Paket an das Betriebssystem weitergeleitet wird.
+
+Warum hat ein einfacher Switch keine MAC-Adresse?
+	- Ein Switch ist nur dazu da, um Pakete stupide weiterzuleiten. Er soll keinen Endpunkt für eine Kommunikation darstellen.
