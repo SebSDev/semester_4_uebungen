@@ -28,6 +28,3 @@ Lösung:
 - ISR holt sich die Werte der verwendeten Register vom Stack und restauriert diese
 - CPU holt sich die Werte von PC und SR wieder vom Stack und schreibt diese in die Register
 - Das Hauptprogramm läuft weiter
-
-
-Weiter bei ISA

@@ -1,0 +1,17 @@
+Mit welchem Assembler-Befehl kann man einen Lesen-Ändern-Schreiben-Zyklus, der nicht unterbrechbar ist, ausführen?
+	- TAS: Test and Set
+
+Warum kann eine .exe(Windows)/.elf(Linux) Datei mit einer CISC-Architektur kleiner sein, als mit einer RISC-Architektur
+	- Die Befehle bei CISC haben eine variable Länge. Beispielsweise wird für Befehle mit simplen Adressierungsmodi nur wenig Speicher verbraucht. 
+	  Bei RISC hat jeder Befehl die gleiche Länge.
+	  Außerdem braucht man bei CISC oft nur einen Befehl für bestimmte Aufgaben, bei denen man in RISC mehrere Befehle benötigt.
+
+Warum gibt es bei einer Transformation von Little Endian zu Big Endian kein Problem bei Strings?
+	- Strings werden Byteweise betrachtet. Es wird also jedes Byte einzeln interpretiert und übertragen. 
+	  Bei anderen Datentypen, wie z.B. int32 gibt es Probleme, weil eine Integer-Variable aus mehreren Bytes besteht, die alle zusammengehören.
+
+Beispiel aus dem Skript (S. 17 Processor 2): MOVE.B (A1)+, (A2)+
+In A1 steht der Wert 0x20000032. 
+Welcher Wert steht in A1 nach Ausführung des Befehls?
+	- 0x20000033. Wegen ".B" wird die Adresse nach dem ausführen des Move Befehls um 1 erhöht.
+
