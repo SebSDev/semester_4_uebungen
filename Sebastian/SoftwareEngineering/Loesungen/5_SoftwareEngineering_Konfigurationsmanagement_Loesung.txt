@@ -1,0 +1,34 @@
+Du hast ein IntelliJ Projekt mit den unten aufgelisteten Dateien. Welche dieser Dateien sollten ins Konfigurationsmanagement aufgenommen werden und welche nicht?
+Main.java
+Besprechungsnotizen_14-03-2018.txt
+Klassendiagramm.jpg
+local_settings_sebastian_generated.iml
+Makefile
+build.gradle
+	- Gehört dazu: Main.java (Quelltext), Klassendiagramm.jpg (Architektur/Designdokument), Makefile (Build Skript), build.gradle (Build Skript/Konfigurationsdatei)
+	  Gehört nicht dazu: Besprechungsnotizen_14-03-2018.txt (Protokoll eines Meetings), local_settings_sebastian_generated.iml (generierte Datei)
+
+Was ist "Lazy Copy"?
+	- Es werden nur Sachen kopiert, die auch wirklich geändert wurden. Für alles andere besteht nur ein Link zur Speicherstelle, von der kopiert wurde.
+
+Was ist ein "Tag" in Git?
+	- Ein Tag ist ein benannter Stand im Repository
+
+Arbeitet Git mit Konfliktvermeidung (Pessimistisch), oder Konflikterkennung (Optimistisch)?
+	- Konflikterkennung
+
+Ordne die unten stehenden Sachverhalte einer Release-Art zu (Major Release, Wartungs-Release, oder Patch Release?)
+	a) Ein Fehler, durch den es nicht mehr möglich war, sich einzuloggen, wurde behoben.
+	b) Das neue Kundenverwaltungssystem ist jetzt Live.
+	c) Das Design des Login-Buttons wurde geändert.
+	- a) Patch Release, b) Major Release, c) Wartungs-Release
+
+Du führst die unten stehenden Git-Befehle nacheinander aus, nachdem du gerade die Datei supi.txt geändert hast. 
+Nach welchem Befehl sind die Änderungen nicht mehr nur bei dir lokal, sondern auch auf dem zentralen Server?
+diff -> add -> commit -> diff -> push 
+	- Erst nach Push sind die Änderungen auf dem Server
+
+Dein Projekt hat zwei Branches. master und development.
+Du befindest dich gerade auf dem Branch "master" und führst den Befehl "git merge development" aus.
+Von wo nach wo werden die Änderungen gemerged? Also von master auf development, oder von development auf master?
+	- Von development auf master
