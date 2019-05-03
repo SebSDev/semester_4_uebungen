@@ -1,0 +1,12 @@
+Welche zwei agilen Vorgehensmodelle haben wir gelernt?
+	- eXtreme Programming und Scrum
+Bei xP werden User Stories erstellt. Aus wessen Sicht werden diese User Stories verfasst? (Benutzer, Entwickler, Kunde, ...?)
+	- Aus der Sicht des Users. Also dem, der das Programm später benutzen soll.
+Was sind die Hauptunterschiede zwischen Scrum und eXtreme Programming?
+	- Bei Scrum gibt es nachdem erstellen des Sprint Backlogs innerhalb des Sprints keine Änderungen mehr am Backlog
+	  Bei eP kann es innerhalb von Iterationen noch kleine Änderungen geben
+	- Bei eP werden bestimmte Praktiken vorgeschrieben. Wie z.B. Pair Programming, oder Test-driven development.
+	  Im Scrum ist man komplett frei. Niemand schreibt vor, wie man was zu tun hat. 
+Was ist sowohl bei Scrum, als auch bei xP sehr wichtig, wenn es um die Auswahl der Teammitglieder geht?
+	- Große Eigenverantwortlichkeit
+	- Eine gute Synergie zwischen den Teammitgliedern (sie müssen gut zusammenpassen).
