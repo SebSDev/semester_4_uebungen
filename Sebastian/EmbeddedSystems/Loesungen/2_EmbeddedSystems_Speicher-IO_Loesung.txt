@@ -1,0 +1,15 @@
+Welchen Vorteil hat die Harvard-Architektur im Vergleich zur "von Neumann"-Architektur?
+	- Bei der Harvard Architektur können gleichzeitig Befehle und Daten aus dem Speicher gelesen werden.
+Wie ist der Signalverlauf am PIN?
+	- Siehe EmbeddedSystems/Materialien/Signalverlauf Aufgabe Lösung
+Was macht der Befehl DDRA |= (1 << DD1) | (1 << DD4); ?
+	- Setzt die Pins 1 und 4 von Port A als Ausgang
+Was macht der Befehl PORTB &= ~(1 << P2);  ?
+	- Wenn Pin 1 von Port B auf Ausgang geschalten ist, kommen bei diesem Pin jetzt 0 Volt raus.
+Warum sollte man folgendes nicht schreiben? DDRA = 0x12
+	- Man könnte ausversehen andere Bits überschreiben.
+Wohin muss Widerstand und Taster, damit bei geschlossenem Taster LOW am Pin gelesen wird? (Bild)
+	- Lösung siehe EmbeddedSystems/Materialien/Taster Aufgabe Lösung
+	  Der Widerstand muss zwischen 5V und Pin, damit kein Kurzschluss bei offenem Taster entsteht. Wenn der Taster also
+	  geöffnet ist, läuft der Strom von 5V in den Pin. Der Widerstand hilft dabei die Spannung auf dem richtigen Niveau zu halten.
+	  Wenn der Taster geschlossen wird, fällt die Spannung komplett am Widerstand ab und der Pin ist mit GND verbunden und bekommt somit keine Spannung mehr.
