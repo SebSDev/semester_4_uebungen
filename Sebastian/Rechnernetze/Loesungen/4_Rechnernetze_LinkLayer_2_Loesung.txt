@@ -1,0 +1,21 @@
+Wiederholung: Wofür steht "Propagation Delay"?
+	- Die Zeit, die ein Paket vom Sender zum Empfänger benötigt. (Propagation = Übertragung/Verbreitung)
+
+Hört der Sender bei CSMA den Kanal vor dem Senden, während dem Senden, oder vor und während dem Senden ab?
+	- Bei reinem CSMA hört der Sender den Kanal nur vor dem Senden ab, als immer wenn er gerade nicht sendet.
+
+Hört der Sender bei CSMA/CD den Kanal vor dem Senden, während dem Senden, oder vor und während dem Senden ab?
+	- Bei CSMA/CD hört der Sender den Kanal vor dem Senden (CSMA) und während dem Senden (CD) ab.
+
+Warum müssen Ethernet Frames eine Mindestlänge haben?
+	- Wenn ein Frame zu kurz ist, kann es passieren, dass das Paket so schnell beim Empfänger ist, dass das JAM-Signal 
+	  erst beim Sender ankommt, wenn es bereits zu spät ist. Wenn das Frame lang genug ist, ist sichergestellt, dass das JAM-Signal
+	  beim Sender ankommt, wenn es noch nicht zu spät ist für einen Abbruch.
+
+Welche zwei Probleme sind dafür verantwortlich, dass bei WLAN keine Kollisionserkennung möglich ist?
+	- 1. WLAN ist nur halbduplex und kann daher nicht den Kanal während des Sendens gleichzeitig abhören
+	  2. Hidden Station Problem (siehe Skript S. 44)
+
+Warum muss bei CSMA/CA DIFS länger als SIFS sein?
+	- Damit der Sender sicher mitbekommt, dass ein ACK vom Empfänger kommt. Ansonsten könnte es sein, dass der Sender bereits anfängt zu senden, obwohl der Empfänger
+	  erst später noch das ACK losschickt.
