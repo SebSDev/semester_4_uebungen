@@ -1,0 +1,22 @@
+Was bedeutet Vref (Referenzspannung) bei der A/D Wandlung?
+	- Die maximal mögliche Analoge Spannung
+
+Ein digitales Analoges Signal wird in ein Digitales Signal, das von einem binären Code mit 3 Bit dargestellt wird, umgewandelt.
+Vref beträgt 5V. Welchen Binärcode hat eine Spannung von 2,1V?
+	- 5V / 2^3 = 0,625 => Ein Schritt hat jeweils 0,625V,   2,1V / 0,625 = 3,36 => der Binärcode lautet 011
+
+Sukzessive Approximation: Es stehen 4 Bits zur Verfügung (r=4) und die Eingangsspannung Vin beträgt 0100 V. 
+Gebe den durch die Sukzessive Approximation erzeugten Binärwert nach jeder Runde an!
+	- 1000
+	  0100
+	  0110
+	  0101
+	  0100
+
+Womit wird die Spannung bei der Single-Ended Conversion verglichen?
+	- Die Spannung wird mit GND verglichen.
+
+Warum werden beim Auslesen der Spannungswerte nach der A/D-Wandlung im Arduino die zwei Register, aus denen sich die Spannungswerte zusammensetzen, nicht automatisch upgedated?
+	- Da der zu lesende Wert auf zwei Register aufgeteilt ist, kann es sein, dass der zeitliche Abstand zwischen dem Lesen der beiden Register so groß ist, dass 
+	  der Wert, den man im ersten Register liest, gar nicht mehr zum Wert im zweiten Register gehört. Daher muss der Programmierer selbst sagen, wann er die Werte gelesen hat
+	  und die Werte aktualisiert werden können.
