@@ -1,0 +1,21 @@
+In REST gibt es nur CRUD-Operationen. Wofür steht CRUD?
+	- Create, Read/Retrieve, Update, Delete
+
+Was ist die wichtigste Voraussetzungen, die eine Ressource für REST erfüllen muss?
+	- Sie muss eindeutig identifizierbar sein
+
+Welches Protokoll benutzt REST?
+	- HTTP
+
+Ordne die HTTP Requests(/Verben) den CRUD-Operationen zu.
+HTTP-Requests: GET, POST, PUT, DELETE
+CRUD-Operationen: Update, Create, Delete, Read
+	- GET-Read; POST-Create; PUT-Update; DELETE-Delete
+
+Welche HTTP Antworten/Rückgabewerte gibt es (nur die Überbegriffe/Nummern)
+	- 1xx: informell		(z.B. 100: Continue)
+	  2xx: Erfolgreicher Aufruf	(z.B. 200: OK)
+	  3xx: redirection/Umleitung	(z.B. 301: Moved Permanently, 307: Temporary Redirect, 308: Permanent Redirect)
+	  4xx: Clientseitiger Fehler	(z.B. 404: Not Found)
+	  5xx: Interner Serverfehler	(z.B. 500: Internal Server Error, 503: Service Unavailable)
+	  Viele mehr auf https://de.wikipedia.org/wiki/HTTP-Statuscode
