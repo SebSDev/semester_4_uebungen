@@ -1,0 +1,14 @@
+1. Du willst in das WDTCSR Register schreiben. Fülle die Lücken in volgendem Code aus:
+	WDTCSR |= (1<< WDCE) | (1<< WDE);
+	WDTCSR  = (1<< WDE) | (1<< WDP3);
+
+2. Welcher Energiesparmodus wurde hier konfiguriert? SMCR |= (1 << SM1) | (1 << SM2);
+	- Standby
+
+3. In C gibt es die Funktion sleep_mode() um beim Arduino den Energiesparmodus zu betreten. 
+   Welche Instruktionen braucht man, um den Energiesparmodus ohne diese Funktion zu betreten?
+	- SMCR |= (1<<SE);
+	  SLEEP //Befehl in Assembler
+
+4. Welche Referenzspannung wurde hier gewählt?
+	- 5V
